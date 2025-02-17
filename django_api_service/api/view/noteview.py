@@ -2,9 +2,9 @@ from django.shortcuts import render
 from django.contrib.auth.models import User
 from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
+from ..serializers import NoteSerializer
+from ..models import Note
 
-from django_api_service.api.models import Note
-from django_api_service.api.serializers import NoteSerializer
 
 
 class NoteListCreate(generics.ListCreateAPIView):
