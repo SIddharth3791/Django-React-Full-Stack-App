@@ -3,8 +3,9 @@ import Form from "../components/form";
 
 function Register(){
 
+    let Final_Route = import.meta.env.VITE_USER_REGISTER_ENDPOINT
     return(
-        <Form route={"/api/user/register/"} method={"register"} />
+        <Form route={Final_Route} method={"register"} />
     )
 }
 
